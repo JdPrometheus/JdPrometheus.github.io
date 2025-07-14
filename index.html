@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Justifia - Gestión de Inasistencias</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images\favicon_io\favicon-32x32.png">
+    <link rel="icon" type="favicon_io/png" sizes="16x16" href="images\favicon_io\favicon-16x16.png">
+    <link rel="shortcut icon" href="/images/logoAlt.png">
+    <!-- Si tienes un .ico, agrega esta línea para máxima compatibilidad -->
+    <!-- <link rel="icon" type="image/x-icon" href="/images/logoAlt.ico"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 font-sans min-h-screen">
+
+    <!-- HERO -->
+    <section class="relative py-10 sm:py-14 md:py-20 lg:py-24 text-center">
+        <!-- Fondo decorativo -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+            <svg class="w-full h-full opacity-15" viewBox="0 0 1440 320">
+                <path fill="#60a5fa" fill-opacity="0.2"
+                    d="M0,64L60,101.3C120,139,240,213,360,208C480,203,600,117,720,101.3C840,85,960,139,1080,160C1200,181,1320,171,1380,165.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+        <div class="relative z-10 flex flex-col items-center">
+            <img src="/images/logo sistema letras blancas.webp" alt="Justifia Logo"
+                class="w-32 sm:w-40 md:w-48 mb-4 sm:mb-6 rounded-2xl shadow-2xl border-2 border-white/30 bg-white/10 p-2">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-2 sm:mb-4 tracking-tight">Justificaciones UAM</h1>
+            <p class="max-w-xs sm:max-w-md md:max-w-xl mx-auto text-base sm:text-lg md:text-xl opacity-80 mb-4 sm:mb-6">Digitaliza la gestión de inasistencias
+                académicas, agilizando la comunicación entre estudiantes, docentes y secretaría.</p>
+            <div class="flex flex-wrap gap-2 justify-center mt-2">
+                <span class="bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow">Laravel 12</span>
+                <span class="bg-teal-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow">TailwindCSS</span>
+                <span class="bg-purple-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow">Alpine.js</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Resumen y Objetivo -->
+    <section class="max-w-4xl mx-auto px-2 sm:px-4 py-8 sm:py-12 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div class="bg-gray-900 rounded-2xl shadow-lg p-5 sm:p-8 border border-blue-800/20 flex flex-col justify-between">
+            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path d="M12 6v6l4 2"></path>
+                    <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+                Resumen
+            </h2>
+            <p class="mb-2">Justifia es una plataforma para <span class="text-blue-400 font-semibold">gestionar
+                    justificantes de inasistencias</span> universitarias de manera ágil y trazable.</p>
+            <ul class="list-disc pl-5 opacity-80">
+                <li>Solicitudes en línea, seguimiento y apelaciones.</li>
+                <li>Notificaciones automáticas y registro digital.</li>
+                <li>Centraliza comunicación entre estudiantes, docentes y secretaría.</li>
+            </ul>
+        </div>
+        <div class="bg-gray-900 rounded-2xl shadow-lg p-5 sm:p-8 border border-teal-800/20">
+            <h2 class="text-2xl font-bold mb-4 text-teal-400">Objetivo</h2>
+            <ul class="space-y-2 text-base">
+                <li>✔️ Facilitar la tramitación digital de ausencias.</li>
+                <li>✔️ Centralizar la comunicación académica.</li>
+                <li>✔️ Mantener historial y trazabilidad total.</li>
+            </ul>
+            <div class="mt-6 text-xs text-gray-400 italic">Soluciona la lentitud y desorden del proceso manual,
+                ahorrando tiempo y papel.</div>
+        </div>
+    </section>
+
+    <!-- 2. Características y Beneficios -->
+    <section class="max-w-6xl mx-auto px-2 sm:px-4 py-8 sm:py-10">
+        <h2 class="text-3xl font-bold mb-6 text-center">Características Destacadas</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+            <div class="bg-gray-900 p-6 rounded-2xl shadow border-l-4 border-blue-600">
+                <h3 class="font-semibold text-lg mb-2">Solicitudes y Apelaciones</h3>
+                <p class="text-sm">Formularios interactivos con validaciones, seguimiento de estado y carga de
+                    evidencias.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow border-l-4 border-teal-600">
+                <h3 class="font-semibold text-lg mb-2">Gestión por Roles</h3>
+                <ul class="list-disc pl-5 text-sm opacity-80">
+                    <li>Estudiante: solicita y consulta.</li>
+                    <li>Secretaría: procesa y notifica.</li>
+                    <li>Docente: reprograma y valida asistencia.</li>
+                </ul>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow border-l-4 border-purple-600">
+                <h3 class="font-semibold text-lg mb-2">Notificaciones y Catálogos</h3>
+                <ul class="list-disc pl-5 text-sm opacity-80">
+                    <li>Correo automático para cambios.</li>
+                    <li>CRUD de catálogos con importación masiva.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8">
+            <div class="bg-gray-900 p-4 sm:p-6 rounded-2xl shadow border border-blue-800/10">
+                <h4 class="text-blue-300 font-semibold mb-2">Interfaz Moderna</h4>
+                <p class="text-xs sm:text-sm">Responsive, modo claro/oscuro, UI limpia con Tailwind y Alpine.js.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Stack Tecnológico -->
+    <section class="max-w-5xl mx-auto px-2 sm:px-4 py-8 sm:py-10">
+        <h2 class="text-3xl font-bold mb-6 text-center">Stack Tecnológico</h2>
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-4 sm:mb-6">
+            <span class="bg-blue-800/80 px-3 py-1 rounded-full">PHP 8.2</span>
+            <span class="bg-orange-600/80 px-3 py-1 rounded-full">Laravel 12</span>
+            <span class="bg-cyan-800/80 px-3 py-1 rounded-full">Blade</span>
+            <span class="bg-sky-700/80 px-3 py-1 rounded-full">TailwindCSS</span>
+            <span class="bg-indigo-600/80 px-3 py-1 rounded-full">Alpine.js</span>
+            <span class="bg-emerald-600/80 px-3 py-1 rounded-full">Vite</span>
+            <span class="bg-yellow-600/80 px-3 py-1 rounded-full">Maatwebsite/Excel</span>
+            <span class="bg-gray-600/80 px-3 py-1 rounded-full">PHPUnit</span>
+        </div>
+        <div class="bg-gray-900 rounded-2xl shadow-lg p-4 sm:p-6 border border-gray-700/40 text-xs sm:text-sm grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
+            <div>
+                <h3 class="text-blue-400 font-semibold mb-2">Backend</h3>
+                <ul class="list-disc pl-5">
+                    <li>Laravel 12 (MVC)</li>
+                    <li>PHP 8.2</li>
+                    <li>Migraciones, seeders y tests</li>
+                    <li>Mailable para correos</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-teal-400 font-semibold mb-2">Frontend</h3>
+                <ul class="list-disc pl-5">
+                    <li>Blade, Tailwind, Alpine.js</li>
+                    <li>Validaciones JS + SweetAlert</li>
+                    <li>Modo oscuro responsive</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Arquitectura y Flujo -->
+    <section class="max-w-5xl mx-auto px-2 sm:px-4 py-8 sm:py-10">
+        <h2 class="text-3xl font-bold mb-6 text-center">Arquitectura y Flujo de Uso</h2>
+        <div
+            class="bg-gray-900 rounded-2xl shadow-lg p-5 sm:p-8 border border-blue-800/15 flex flex-col md:flex-row items-center gap-4 sm:gap-6">
+            <!-- Aquí podrías poner una imagen tipo diagrama de roles, la puedo generar si quieres -->
+            <div class="flex-1">
+                <ul class="space-y-2 text-base">
+                    <li>🔑 Ingreso y autenticación segmentada por rol.</li>
+                    <li>📝 Estudiante crea solicitud y adjunta evidencia.</li>
+                    <li>📋 Secretaría revisa, aprueba/rechaza, notifica y recibe apelaciones.</li>
+                    <li>📆 Docente visualiza, reprograma y marca asistencia.</li>
+                    <li>📧 Notificaciones automáticas acompañan cada cambio.</li>
+                </ul>
+            </div>
+            <img src="/images/wireframe.png" class="w-40 sm:w-48 md:w-56 rounded-lg shadow mt-4 md:mt-0" alt="Justifia Alt Logo">
+        </div>
+        <div class="mt-4 sm:mt-6 bg-gray-800 p-4 sm:p-6 rounded-xl text-xs text-gray-400 text-center">
+            Modularidad total: Módulos por rol, rutas protegidas y validaciones a todo nivel.
+        </div>
+    </section>
+
+    <!-- 5. Desafíos y Soluciones -->
+    <section class="max-w-5xl mx-auto px-2 sm:px-4 py-8 sm:py-10">
+        <h2 class="text-3xl font-bold mb-6 text-center">Desafíos Superados</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+            <div class="bg-gray-900 p-6 rounded-2xl shadow border-l-4 border-pink-600">
+                <h3 class="font-semibold mb-2">Validaciones robustas</h3>
+                <p class="text-sm opacity-80">Backend y frontend colaboran para impedir errores y archivos inválidos.
+                </p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow border-l-4 border-yellow-500">
+                <h3 class="font-semibold mb-2">Roles y Permisos</h3>
+                <p class="text-sm opacity-80">Modelo de roles claro, con rutas y vistas segmentadas.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow border-l-4 border-green-500">
+                <h3 class="font-semibold mb-2">Manejo de archivos</h3>
+                <p class="text-sm opacity-80">Adjuntos seguros y previsualización con modales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Ventajas e Innovaciones -->
+    <section class="max-w-5xl mx-auto px-2 sm:px-4 py-8 sm:py-10">
+        <h2 class="text-3xl font-bold mb-6 text-center">Ventajas e Innovación</h2>
+        <div
+            class="bg-gradient-to-r from-blue-700/70 via-indigo-700/60 to-purple-700/70 p-4 sm:p-8 rounded-2xl shadow-lg text-base sm:text-lg font-semibold text-center">
+            <ul class="list-inside list-disc space-y-1 sm:space-y-2">
+                <li>Automatiza la comunicación académica, reduciendo tiempos y errores.</li>
+                <li>Transparencia con historial de apelaciones y seguimiento.</li>
+                <li>Importa docentes/asignaturas desde Excel, fácil carga inicial.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 7. Equipo de Desarrollo -->
+    <section class="max-w-3xl mx-auto px-2 sm:px-4 py-8 sm:py-10">
+        <h2 class="text-3xl font-bold mb-6 text-center">Equipo</h2>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+            <div class="bg-gray-900 p-4 sm:p-6 rounded-xl shadow text-center mb-2 sm:mb-0">
+                <p class="font-bold text-lg text-blue-400">Armando Alguera</p>
+                <p class="text-xs text-gray-400">Desarrollador</p>
+            </div>
+            <div class="bg-gray-900 p-4 sm:p-6 rounded-xl shadow text-center mb-2 sm:mb-0">
+                <p class="font-bold text-lg text-blue-400">Josué Cano</p>
+                <p class="text-xs text-gray-400">Desarrollador</p>
+            </div>
+            <div class="bg-gray-900 p-4 sm:p-6 rounded-xl shadow text-center">
+                <p class="font-bold text-lg text-blue-400">José Levi</p>
+                <p class="text-xs text-gray-400">Desarrollador</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center py-6 sm:py-8 text-gray-500 text-xs sm:text-sm">
+        Justifia &copy; 2025 · Aplicación académica · Laravel + Tailwind ·
+        <a href="https://github.com/Josuedcm03/justifia.git" class="text-blue-400 underline">Ver en GitHub</a>
+    </footer>
+
+</body>
+
+</html>
